@@ -10,6 +10,7 @@ public class StudiKasus2_29 {
         String jenisKegiatan;
         int jmlDokumen;
         int peringkat;
+        int statusPkm;
 
         System.out.print("Nama mahasiswa: ");
         nama = zahwa.nextLine();
@@ -19,6 +20,8 @@ public class StudiKasus2_29 {
         jmlDokumen = zahwa.nextInt();
         System.out.print("Peringkat: ");
         peringkat = zahwa.nextInt();
+        System.out.print("Status PKM (1 untuk lolos, 0 untuk tidak lolos): ");
+        statusPkm = zahwa.nextInt();
 
         // if jenis kegiatan 
         if (jenisKegiatan.equalsIgnoreCase("BELMAWA") || jenisKegiatan.equalsIgnoreCase("BAKORMA") || jenisKegiatan.equalsIgnoreCase("MANDIRI") || jenisKegiatan.equalsIgnoreCase("PKM") || jenisKegiatan.equalsIgnoreCase("LAINNYA")) {
@@ -38,6 +41,19 @@ public class StudiKasus2_29 {
                     System.out.println("Dana penghargaan tidak diberikan.");
                 }
             }
+        } else if (jenisKegiatan.equalsIgnoreCase("PKM")) {
+
+            // if buat status PKM
+            if (statusPkm == 1) {
+                System.out.println("Status : Dokumen lengkap.");
+                System.out.println("Dana penghargaan diberikan.");
+            } else {
+                System.out.println("Status : Dokumen lengkap, tetapi tidak lolos PKM.");
+                System.out.println("Dana penghargaan tidak diberikan.");
+            }
+        } else {
+            System.out.println("Jenis kegiatan tidak valid.");
+            System.out.println("Dana penghargaan tidak diberikan.");
         }
     }
 }
