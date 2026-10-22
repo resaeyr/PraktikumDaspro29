@@ -1,3 +1,7 @@
+// Jumlah mahasiswa (batas perulangan FOR) = 8 + (P mod 5) → gantikan angka 10 pada soal. 8 + (29 mod 5) = 8 + 4 = 12
+// Batas kelulusan pada Pertanyaan no. 4 (modifikasi kode) = 55 + (P mod 11) → gantikan angka 60 pada soal Percobaan. 55 ( 29 mod 11 ) = 55 + 9 = 64  
+// absen = 29
+
 package Pertemuan9;
 
 import java.util.Scanner;
