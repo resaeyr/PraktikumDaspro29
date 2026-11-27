@@ -11,6 +11,7 @@ public class BioskopWithScanner29 {
         String[][] penonton = new String [4][2];
 
         while (true) {
+            System.out.println();
             System.out.println("1. Input data penonton");
             System.out.println("2. Tampilan daftar penonton");
             System.out.println("3. Exit");
@@ -60,7 +61,7 @@ public class BioskopWithScanner29 {
     }    
 }
 
-
+//modif pertanyaan 2
 //input data penonton
 //tampilkan daftar penonton
 //exit
