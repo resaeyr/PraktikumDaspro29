@@ -12,6 +12,7 @@ public class BioskopWithScanner29 {
 
         while (true) {
             System.out.println();
+            System.out.println("===== Menu =====");
             System.out.println("1. Input data penonton");
             System.out.println("2. Tampilan daftar penonton");
             System.out.println("3. Exit");
@@ -36,7 +37,11 @@ public class BioskopWithScanner29 {
                 
                 zahwa.nextLine();
 
-                penonton[baris - 1][kolom - 1] = nama;
+                if (baris >= 1 && baris <= 4 && kolom >= 1 && kolom <= 2) {
+                    penonton[baris - 1][kolom - 1] = nama;
+                } else {
+                    System.out.println("Nomor baris atau kolom tidak tersedia");
+                }
 
                 System.out.println();
 
@@ -60,8 +65,3 @@ public class BioskopWithScanner29 {
         }
     }    
 }
-
-//modif pertanyaan 2
-//input data penonton
-//tampilkan daftar penonton
-//exit
